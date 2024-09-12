@@ -1,64 +1,59 @@
-* {
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+  /* Sticky Navbar */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #003366; /* Dark blue background for navbar */
   }
   
-  header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  nav .nav-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
-  header h1 {
-    margin-bottom: 10px;
+  /* Add space below the navbar to avoid content overlap */
+  .container {
+    margin-top: 70px; /* Adjust based on the navbar height */
   }
   
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  section {
-    padding: 20px;
-    margin: 20px 0;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Section Spacing */
+  .section {
+    padding: 40px 0;
   }
   
   h2 {
-    margin-bottom: 15px;
+    color: #003366; /* Dark blue for headings */
+    margin-bottom: 20px;
   }
   
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+  /* Button Styling */
+  button {
     margin-top: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Navbar Branding Logo */
+  nav .brand-logo {
+    font-weight: bold;
+    color: white !important;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #003366; /* Match the navbar color */
+    color: white;
   }

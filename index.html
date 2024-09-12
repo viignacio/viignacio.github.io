@@ -5,54 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-      <ul>
+
+  <!-- Sticky Navbar -->
+  <nav class="blue darken-4">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">My Portfolio</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#about">About Me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a QA Engineer with expertise in testing and shipping international products. I am ISTQB-BCS certified and passionate about learning new technologies.</p>
-  </section>
+  <!-- Main Content -->
+  <div class="container">
+    <section id="about" class="section scrollspy">
+      <h2>About Me</h2>
+      <p>I am a QA Engineer with expertise in testing and shipping international products. I am ISTQB-BCS certified and passionate about learning new technologies.</p>
+    </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Here are some of the projects I have worked on:</p>
-    <ul>
-      <li>Project 1: Description of the project.</li>
-      <li>Project 2: Description of the project.</li>
-      <li>Project 3: Description of the project.</li>
-    </ul>
-  </section>
+    <section id="portfolio" class="section scrollspy">
+      <h2>Portfolio</h2>
+      <ul class="collection">
+        <li class="collection-item">Project 1: This project involved testing mobile apps.</li>
+        <li class="collection-item">Project 2: Automation testing for an e-commerce platform.</li>
+        <li class="collection-item">Project 3: Performance testing for a cloud application.</li>
+      </ul>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Manual Testing</li>
-      <li>Automation Testing (Selenium, Appium)</li>
-      <li>Agile Methodologies</li>
-      <li>Test Design Techniques</li>
-      <li>Bug Reporting and Analysis</li>
-    </ul>
-  </section>
+    <section id="skills" class="section scrollspy">
+      <h2>Skills</h2>
+      <div class="chip">Manual Testing</div>
+      <div class="chip">Automation Testing (Selenium, Appium)</div>
+      <div class="chip">Agile Methodologies</div>
+      <div class="chip">Test Design Techniques</div>
+      <div class="chip">Bug Reporting and Analysis</div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>You can reach me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-  </section>
+    <section id="contact" class="section scrollspy">
+      <h2>Contact</h2>
+      <p>You can reach me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <button id="contactButton" class="btn waves-effect waves-light blue darken-4">Show Message</button>
+      <p id="contactMessage" class="hidden">Thank you for reaching out! I'll get back to you soon.</p>
+    </section>
+  </div>
 
-  <footer>
-    <p>© 2024 My Portfolio. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="page-footer blue darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">My Portfolio</h5>
+          <p class="grey-text text-lighten-4">QA Engineer specializing in manual and automation testing.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2024 My Portfolio. All rights reserved.
+      </div>
+    </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
